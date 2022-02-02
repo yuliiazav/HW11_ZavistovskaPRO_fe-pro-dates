@@ -1,0 +1,26 @@
+{
+  "name": "fe-pro-dates",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npx @arkweid/lefthook install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rammfall-edu/fe-pro-dates.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rammfall-edu/fe-pro-dates/issues"
+  },
+  "homepage": "https://github.com/rammfall-edu/fe-pro-dates#readme",
+  "devDependencies": {
+    "@arkweid/lefthook": "^0.7.7",
+    "jest": "^27.4.7",
+    "prettier": "^2.5.1"
+  }
+}
