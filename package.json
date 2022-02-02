@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "prepare": "npx @arkweid/lefthook install"
   },
   "repository": {
@@ -22,5 +22,9 @@
     "@arkweid/lefthook": "^0.7.7",
     "jest": "^27.4.7",
     "prettier": "^2.5.1"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "singleQuote": true
   }
 }
