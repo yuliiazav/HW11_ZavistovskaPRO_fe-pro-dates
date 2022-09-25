@@ -35,16 +35,16 @@ function getDay(date, lang) {
 function formatTime(date) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
-  let result = `${hours} : ${minutes}`;
+  let result = `${hours}:${minutes}`;
 
     if (hours < 10 && minutes >= 10) {
-    return `0${hours} : ${minutes}`
+    return `0${hours}:${minutes}`
   }
     if (hours >= 10 && minutes < 10) {
-    return `${hours} : 0${minutes}`
+    return `${hours}:0${minutes}`
   }
   if (hours < 10 && minutes < 10) {
-    return `0${hours} : 0${minutes}`
+    return `0${hours}:0${minutes}`
   }  else {
     return result;
   }
