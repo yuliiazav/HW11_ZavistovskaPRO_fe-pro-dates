@@ -35,21 +35,29 @@ function getDay(date, lang) {
 function formatTime(date) {
   let hours = date.getHours();
   let minutes = date.getMinutes();
-  let result = `${hours}:${minutes}`;
 
-    if (hours < 10 && minutes >= 10) {
-    return `0${hours}:${minutes}`
+  function formattedTimeView (hours, minutes) {
+    return `${hours < 10 ? `0${hours}`: hours}:${minutes < 10 ? `0${minutes}`: minutes}`;
   }
-    if (hours >= 10 && minutes < 10) {
-    return `${hours}:0${minutes}`
-  }
-  if (hours < 10 && minutes < 10) {
-    return `0${hours}:0${minutes}`
-  }  else {
-    return result;
-  }
-
+  let result = formattedTimeView (hours, minutes);
+  return result;
 }
+
+
+  // let result = `${hours}:${minutes}`;
+  //
+  //   if (hours < 10 && minutes >= 10) {
+  //   return `0${hours}:${minutes}`
+  // }
+  //   if (hours >= 10 && minutes < 10) {
+  //   return `${hours}:0${minutes}`
+  // }
+  // if (hours < 10 && minutes < 10) {
+  //   return `0${hours}:0${minutes}`
+  // }  else {
+  //   return result;
+  // }
+
 
 /*
 Напишите функцию getLastDayOfMonth(year, month), 
